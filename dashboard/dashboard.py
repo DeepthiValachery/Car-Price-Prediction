@@ -54,7 +54,7 @@ else:
     st.write("") 
     st.title("Trends from the Filtered Listings")
 
-    #  =========== Filtered Visuals forthe Dealer =============
+    #  =========== Filtered Visuals for the Dealer =============
     
     st.write("") 
     st.subheader("Price vs Mileage")
@@ -68,6 +68,9 @@ else:
         .sort_values("Year")
     )
     st.line_chart(avg_by_year, x="Year", y="Price")
+
+    st.subheader("Year vs Price")
+    st.scatter_chart(filtered_df[["Year", "Price"]])
 
     # =========== General Visuals =============
 
