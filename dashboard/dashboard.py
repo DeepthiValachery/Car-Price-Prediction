@@ -11,7 +11,7 @@ def load_data():
 
 df = load_data()
 
-st.title("Car Pricing Advisor for Dealers")
+st.title("Car Pricing Advisor")
 
 # Sidebar
 st.sidebar.header("Filter Listings")
